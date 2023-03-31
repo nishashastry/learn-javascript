@@ -30,8 +30,8 @@ function result() {
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300*0.0714286) + ' stone';
-    const temperature =  Math.round((94 - 32) * (5/9)) + ' Celcius';
+    const weight = `${Math.round(300*0.0714286)} stone`;
+    const temperature = `${Math.round((94 - 32) * (5/9))} Celcius`;
     
     newStory = storyText.replaceAll("300 pounds", weight);
     newStory = storyText.replaceAll("94 fahrenheit", temperature);
